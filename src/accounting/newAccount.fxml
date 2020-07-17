@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="97.0" prefWidth="304.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="accounting.NewAccountController">
+   <children>
+      <HBox prefHeight="20.0" prefWidth="304.0">
+         <children>
+            <RadioButton fx:id="bankRadio" mnemonicParsing="false" prefHeight="29.0" prefWidth="152.0" text="Bank" />
+            <RadioButton fx:id="creditCardRadio" mnemonicParsing="false" prefHeight="42.0" prefWidth="152.0" text="Credit Card" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox prefHeight="19.0" prefWidth="304.0">
+         <children>
+            <Label prefHeight="30.0" prefWidth="116.0" text="Name of account:" />
+            <TextField fx:id="nameField" prefHeight="26.0" prefWidth="189.0" />
+         </children>
+      </HBox>
+      <HBox prefHeight="19.0" prefWidth="304.0">
+         <children>
+            <Label prefHeight="45.0" prefWidth="129.0" text="Balance of account:" />
+            <TextField fx:id="balanceField" prefHeight="26.0" prefWidth="176.0" promptText="\$" />
+         </children>
+      </HBox>
+      <Button fx:id="createButton" mnemonicParsing="false" onAction="#displayAccount" prefHeight="26.0" prefWidth="324.0" text="Create Account" />
+   </children>
+</VBox>
