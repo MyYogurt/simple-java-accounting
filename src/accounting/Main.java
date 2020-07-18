@@ -11,6 +11,9 @@ import java.util.ArrayList;
 
 public class Main extends Application {
 
+    /**
+     * Main application window
+     */
     private static Window mainWindow;
 
     /**
